@@ -22,5 +22,11 @@ auth:
 	gh auth login
 
 init:
+	git config --global user.name "Kurgaev Vladimir"
+	git config --global user.email kurgaev101@gmail.com
 	git init
 	gh repo create
+	git add .
+	git commit -m "first commit"
+	#git push --set-upstream origin master
+	git push

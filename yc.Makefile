@@ -11,6 +11,7 @@ help:
 	@ echo '	5 - yc iam lists'
 	@ echo '	6 - yc container lists'
 	@ echo '	install'
+	@ echo '	init'
 	@ echo
 
 0:
@@ -59,3 +60,6 @@ help:
 
 install:
 	curl https://storage.yandexcloud.net/yandexcloud-yc/install.sh | bash -s -- -a
+
+init:
+	yc init
